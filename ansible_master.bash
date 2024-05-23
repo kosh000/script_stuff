@@ -134,3 +134,15 @@ ansible_ssh_pass: ansible
 
 ansible_pass: "password1"
 EOT
+
+sudo tee /etc/ansible/hosts > /dev/null << EOT
+---
+[localhost]
+`hostname -i`   ansible-connection=local
+
+[handshake]
+#all managed hosts here
+
+[config]
+#example group
+EOT
