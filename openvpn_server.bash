@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo apt update
-sud apt upgrade -y
+sudo apt upgrade -y
 
 wget https://raw.githubusercontent.com/Angristan/openvpn-install/master/openvpn-install.sh -O ubuntu-22.04-lts-vpn-server.sh
 sudo chmod +x ubuntu-22.04-lts-vpn-server.sh
