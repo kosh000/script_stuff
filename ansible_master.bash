@@ -128,21 +128,14 @@ EOT
 
 sudo -u ansible touch /home/ansible/my_passwords.yml
 sudo chmod 777 /home/ansible/my_passwords.yml
-sudo tee /home/ansible/my_passwords.yml > /dev/null << EOT
----
-ansible_ssh_pass: ansible
-
-ansible_pass: "password1"
-EOT
 
 sudo tee /etc/ansible/hosts > /dev/null << EOT
----
 [localhost]
-`hostname -i`   ansible-connection=local
-
+`hostname -i`   ansible_connection=local
+ 
 [handshake]
 #all managed hosts here
-
+ 
 [config]
 #example group
 EOT
