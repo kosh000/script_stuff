@@ -40,7 +40,7 @@ TLDR; EKS is fully-managed kube service by AWS which takes your pain away (❁´
 - Create EC2 Yourselves. (_SelfManaged, you will have to manage the number of instances you will have your deployments deployed on, if you need more compute for your deployment then you will have to deploy more EC2 instances_)
 - Fargate. (_Serverless Compute for containers, the Autoscaling/HA is managed by the AWS_)
 
-### Ways to use EKS on AWS.
+### Ways to use EKS on AWS
 
 1. Create VMs yourself and use KOPS or Kubeadm.
 2. USE EKS XD.
