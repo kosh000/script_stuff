@@ -98,8 +98,11 @@ There are 3 ways to access a POD.
 
 Exposing Pods or SVC or Ingress:
 
-- For the Tutorial, that I had watched; doing this would require you to use the OIDC for IAM for the cluster. This will enable the pod/alb to be able to talk to the pod.
+- This will enable the pod/alb to be able to talk to the pod.
 - Here, what is happening - When the controller is deployed an ALB is deployed within the Kube Environment which is exposed to the Internet and all of the traffic which is coming is handled by that pod 
+
+TRASH:
+For the Tutorial, that I had watched; doing this would require you to use the OIDC for IAM for the cluster.
 
 ## Abbreviation
 
